@@ -50,34 +50,9 @@ scrollToTopBtn?.addEventListener('click', () => {
 // ========================================
 // FORMULARIO DE CONTACTO
 // ========================================
-const contactForm = document.getElementById('contactForm');
-
-contactForm?.addEventListener('submit', async (e) => {
-	e.preventDefault();
-	
-	const submitBtn = contactForm.querySelector('button[type="submit"]');
-	const originalText = submitBtn.innerHTML;
-	
-	// Animación de envío
-	submitBtn.innerHTML = '<span>Enviando...</span>';
-	submitBtn.disabled = true;
-	
-	// Simular envío (aquí puedes agregar la lógica real de envío)
-	setTimeout(() => {
-		submitBtn.innerHTML = '<span>¡Mensaje Enviado! ✓</span>';
-		submitBtn.style.background = 'var(--success)';
-		
-		// Resetear formulario
-		contactForm.reset();
-		
-		// Restaurar botón después de 3 segundos
-		setTimeout(() => {
-			submitBtn.innerHTML = originalText;
-			submitBtn.style.background = '';
-			submitBtn.disabled = false;
-		}, 3000);
-	}, 1500);
-});
+// El formulario usa Formspree con método POST estándar
+// Si quieres mantener al usuario en la página, desactiva reCAPTCHA en:
+// https://formspree.io/forms/xgebeaer/settings
 
 // ========================================
 // EFECTOS HOVER EN TECH BADGES
