@@ -22,7 +22,7 @@
   },
   "contributors": [],
   "scripts": {
-    "dev": "node --watch ./src/app.js",
+    "dev": "node --watch ./app.js",
     "linter": "npx @biomejs/biome format --write ./src"
   },
   "dependencies": {
