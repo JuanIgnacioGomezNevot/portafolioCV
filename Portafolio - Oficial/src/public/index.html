@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/svg+xml" href="images/icons8-código-48.png">
+	<title>JIGN | Portafolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/styles.css">
+    <script src="/main.js" defer></script>
+</head>
+<body>
+  <!-- Header con navegación mejorada -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">
+        <span class="bracket">&lt;</span>
+        <span class="j">J</span><span class="i">I</span><span class="g">G</span><span class="n">N</span>
+        <span class="bracket">/&gt;</span>
+      </div>
+      
+      <div class="nav-controls">
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+          <img src="images/sun.png" alt="Modo claro" class="icon-light">
+          <img src="images/moon.png" alt="Modo oscuro" class="icon-dark">
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="profile-image-wrapper">
+        <div class="profile-glow"></div>
+        <img src="images/foto mia 2.jpeg" alt="Juan Ignacio Gomez Nevot" class="profile-img">
+      </div>
+      
+      <div class="profile-info">
+        <div class="greeting">
+          <span class="wave">👋</span>
+          <p>Hola! Soy</p>
+        </div>
+        <h1 class="name-title">Juan Ignacio Gomez Nevot</h1>
+        <h2 class="role">
+          <span class="role-text">Analista en Sistemas</span>
+          <span class="separator">•</span>
+          <span class="role-text">Desarrollador Full Stack</span>
+        </h2>
+        <p class="hero-description">
+          Desarrollador apasionado por crear soluciones web innovadoras y eficientes. 
+          Especializado en tecnologías modernas como JavaScript, Vue.js, Node.js y bases de datos SQL/NoSQL.
+        </p>
+        
+        <div class="quick-links">
+          <a href="#contacto" class="btn btn-primary">Contactame</a>
+          <a href="#proyectos" class="btn btn-secondary">Ver Proyectos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre mí -->
+  <section class="section about-section" id="sobre-mi">
+    <h3 class="section-title">
+      <span class="title-number">01.</span> Sobre mí
+    </h3>
+    <div class="about-content">
+      <div class="about-text">
+        <p class="description">
+          Soy un desarrollador en formación con una fuerte vocación autodidacta. Finalicé la carrera de <span class="highlight">Analista en Sistemas</span> y obtuve el título intermedio de <span class="highlight">Analista Programador</span> en el Instituto ORT Argentina.
+        </p>
+        <p class="description">
+          Me apasiona aprender constantemente y enfrentar nuevos desafíos que me permitan seguir creciendo como desarrollador. Aunque aún no tuve mi primera experiencia laboral en IT, me preparo activamente para ingresar al mundo profesional, con el objetivo de aportar soluciones prácticas y eficientes dentro del campo del desarrollo de software.
+        </p>
+        <p class="description">
+          Me destaco por mi compromiso, curiosidad tecnológica y visión crítica a la hora de encarar proyectos. Busco constantemente mejorar mis habilidades y estar al día con las últimas tendencias tecnológicas.
+        </p>
+      </div>
+      
+      <!-- Tecnologías destacadas -->
+      <div class="tech-stack">
+        <h4>💻 Stack Tecnológico</h4>
+        <div class="tech-categories">
+          <div class="tech-category">
+            <h5>Frontend</h5>
+            <div class="tech-grid">
+              <span class="tech-badge">HTML</span>
+              <span class="tech-badge">CSS</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">Vue.js</span>
+            </div>
+          </div>
+          
+          <div class="tech-category">
+            <h5>Backend</h5>
+            <div class="tech-grid">
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">Java</span>
+              <span class="tech-badge">.NET</span>
+              <span class="tech-badge">C++</span>
+            </div>
+          </div>
+          
+          <div class="tech-category">
+            <h5>Bases de Datos</h5>
+            <div class="tech-grid">
+              <span class="tech-badge">SQL Server</span>
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge">MongoDB</span>
+            </div>
+          </div>
+          
+          <div class="tech-category">
+            <h5>Herramientas</h5>
+            <div class="tech-grid">
+              <span class="tech-badge">GIT</span>
+              <span class="tech-badge">SCRUM</span>
+              <span class="tech-badge">Dart</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Educación -->
+  <section class="section education-section">
+    <h3 class="section-title">
+      <span class="title-number">02.</span> Educación
+    </h3>
+    <div class="education-card">
+      <div class="education-header">
+        <img src="images/ortInstituto.png" alt="ORT Logo" class="education-logo">
+        <div class="education-info">
+          <h4 class="education-title">Tecnicatura Universitaria en Analista en Sistemas</h4>
+          <p class="education-institution">Instituto Terciario ORT Argentina</p>
+          <p class="education-period">
+            <span class="period-badge">2022 - 2025</span>
+          </p>
+        </div>
+      </div>
+      <p class="education-description">
+        A lo largo de mi formación, he trabajado con tecnologías como HTML, CSS, JavaScript, Java, Node.js, Vue.js, .NET, SQL Server, MySQL, MongoDB y GIT, además de aplicar metodologías ágiles como SCRUM y explorar distintos frameworks de desarrollo.
+      </p>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section class="section projects-section" id="proyectos">
+    <h3 class="section-title">
+      <span class="title-number">03.</span> Proyectos Destacados
+    </h3>
+    <div class="projects-grid">
+      <article class="project-card">
+        <div class="project-image">
+          <img src="images/Tallaenmadera.png" alt="Talla en madera - Martin Lopizzo">
+          <div class="project-overlay">
+            <a href="https://tallaenmadera.com.ar" class="project-link">Ver Proyecto</a>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">Html</span>
+            <span class="tag">Css</span>
+            <span class="tag">Netlify</span>
+          </div>
+          <h4 class="project-title">Talla en madera - Martin Lopizzo</h4>
+          <p class="project-description">Portafolio sobre artista de talla en madera y arte contemporáneo en Buenos Aires. Presenta sus obras con un estilo muy limpio y minimalista que deja protagonismo a las fotos de las piezas. Incluye una breve presentación del artista y una sección de contacto directo por WhatsApp, mail y redes sociales para consultas o encargos.</p>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-image">
+          <img src="images/Nestle1.png" alt="App Web Nestle">
+          <div class="project-overlay">
+            <a href="https://nestle-artes-ia.onrender.com/#/login" class="project-link">Ver Proyecto</a>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-tags">
+            <span class="tag">Flutter</span>
+            <span class="tag">Dart</span>
+            <span class="tag">C++</span>
+            <span class="tag">Serenity</span>
+            <span class="tag">Render</span>
+            <span class="tag">Supabase</span>
+            <span class="tag">Firebase</span>
+          </div>
+          <h4 class="project-title">NestléArtesIA - Sistema de Análisis de Arte con IA</h4>
+          <p class="project-description">Aplicación desarrollada en Flutter que permite a los usuarios acreditados por la compañía analizar piezas de arte utilizando inteligencia artificial parametrizada a medida de sus requerimientos. La aplicación combina la seguridad de Firebase para autenticación, Supabase para gestión de datos y la API de Serenity Star para análisis de imágenes con IA.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section class="section contact-section" id="contacto">
+    <h3 class="section-title">
+      <span class="title-number">04.</span> Contactame
+    </h3>
+    <div class="contact-wrapper">
+      <div class="contact-intro">
+        <p>¿Tienes un proyecto en mente o simplemente quieres conversar? Mi bandeja de entrada siempre está abierta.</p>
+      </div>
+      <div class="contact-form">
+        <form action="#" method="post" id="contactForm">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre completo" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="tu.email@ejemplo.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" placeholder="¿En qué te puedo ayudar?" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-submit">
+            <span>Enviar Mensaje</span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M17.5 2.5L8.75 11.25M17.5 2.5L12.5 17.5L8.75 11.25M17.5 2.5L2.5 7.5L8.75 11.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer mejorado -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-info">
+        <div class="logo footer-logo">
+          <span class="bracket">&lt;</span>
+          <span class="j">J</span><span class="i">I</span><span class="g">G</span><span class="n">N</span>
+          <span class="bracket">/&gt;</span>
+        </div>
+        <p class="footer-email">Mail: Juanchoneevot2003@hotmail.com</p>
+        <p class="footer-email">Cel: +54 9 11 3810 8978</p>
+      </div>
+      
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/juan-ignacio-gomez-nevot-069a911b5" class="social-link" aria-label="LinkedIn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+        <a href="https://github.com/JuanIgnacioGomezNevot" class="social-link" aria-label="GitHub">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>Diseñado y desarrollado con <span class="heart">❤</span> usando Node.js + Express</p>
+      <p class="copyright">© 2025 Juan Ignacio Gomez Nevot - Buenos Aires, Argentina. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to top button -->
+  <button class="scroll-to-top" id="scrollToTop" aria-label="Volver arriba">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+      <path d="M12 19V5M5 12l7-7 7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+</body>
+</html>
