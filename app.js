@@ -1,5 +1,5 @@
 import express from "express";
-import { config } from "./config/config.js";
+import { config } from "./src/config/config.js";
 
 const DISPLAY_MSG = `👌Serving at http://${config.HOST}:${config.PORT}`;
 
