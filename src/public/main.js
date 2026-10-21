@@ -2,18 +2,24 @@
 // MODO OSCURO/CLARO
 // ========================================
 const themeToggle = document.getElementById('themeToggle');
-const body = document.body;
+const root = document.documentElement;
 
 // Cargar preferencia del usuario
 const currentTheme = localStorage.getItem('theme') || 'dark';
 if (currentTheme === 'light') {
-	body.classList.add('light-mode');
+	root.classList.add('light-mode');
+	root.style.colorScheme = 'light';
+} else {
+	root.style.colorScheme = 'dark';
 }
 
 themeToggle?.addEventListener('click', () => {
-	body.classList.toggle('light-mode');
-	const theme = body.classList.contains('light-mode') ? 'light' : 'dark';
+	root.classList.toggle('light-mode');
+	const theme = root.classList.contains('light-mode') ? 'light' : 'dark';
+	root.style.colorScheme = theme;
 	localStorage.setItem('theme', theme);
+	// Forzar repintado inmediato en algunos navegadores
+	void document.body.offsetHeight;
 	
 	// Animación del botón
 	themeToggle.style.transform = 'rotate(360deg)';

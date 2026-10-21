@@ -51,7 +51,7 @@
 }
 
 /* Modo claro */
-body.light-mode {
+html.light-mode {
 	--bg-primary: #ffffff;
 	--bg-secondary: #f8fafc;
 	--bg-tertiary: #e2e8f0;
@@ -133,7 +133,7 @@ body::before {
 	animation: slideDown 0.5s ease;
 }
 
-body.light-mode .header {
+html.light-mode .header {
 	background: rgba(255, 255, 255, 0.8);
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -212,11 +212,11 @@ body.light-mode .header {
 	display: none;
 }
 
-body.light-mode .icon-light {
+html.light-mode .icon-light {
 	display: none;
 }
 
-body.light-mode .icon-dark {
+html.light-mode .icon-dark {
 	display: block;
 }
 
